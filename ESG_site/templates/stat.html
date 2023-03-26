@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ESG Center - Statistics</title>
+
+    <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/all.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/animate.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/nice-select.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/owl.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/magnific-popup.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/flaticon.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/main.css">
+
+    <link rel="shortcut icon" href="{{STATIC_URL}}images/favicon.png" type="image/x-icon">
+</head>
+
+<body data-spy="scroll" data-target="#faq-menu" data-offset="150">
+    <!--============= ScrollToTop Section Starts Here =============-->
+    <div class="overlayer" id="overlayer">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+    <a href="#0" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+    <div class="overlay"></div>
+    <!--============= ScrollToTop Section Ends Here =============-->
+
+
+    <!--============= Header Section Starts Here =============-->
+    <header class="header-section">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-area">
+                    <div class="support">
+                        <a href="/#0/">ESG Center</a>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    <li>
+                        <a href="#0">Service</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="/stat/">Statistics</a>
+                            </li>
+                            <li>
+                                <a href="/changelog/">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="/list/">Advanced Search</a>
+                            </li>
+                            <li>
+                                <a href="/contact/">Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="d-md-none text-center">
+                        <a href="#0" class="m-0 header-button">Submit a Request</a>
+                    </li>
+                </ul>
+                <div class="header-bar d-lg-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-right">
+                    <a href="/logout/" class="header-button d-none d-md-inline-block">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--============= Header Section Ends Here =============-->
+
+    <!--============= Banner Section Starts Here =============-->
+    <div class="hero-section about-style bg_img bottom_center"
+        data-background="{{STATIC_URL}}images/banner/page-header.jpg">
+        <div class="bottom-shape d-none d-md-block">
+            <img src="{{STATIC_URL}}images/banner/banner-shape.png" alt="banner">
+        </div>
+        <div class="container">
+            <div class="hero-content cl-white">
+                <h1 class="title">Statistics</h1>
+                <p>Get to know more details of our project</p>
+            </div>
+        </div>
+    </div>
+    <!--============= Banner Section Ends Here =============-->
+
+    <!--============= Faqs Section Starts Here =============-->
+    <section class="faq-section padding-top padding-bottom">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4">
+                    <aside class="sticky-menu">
+                        <div class="faq-menu bg_img mb-30" data-background="{{STATIC_URL}}images/faq/faq-menu.png">
+                            <ul id="faq-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#company">Timeseries Statistics</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#freelancer">Source Statistics</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#account"> Word Frequency</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="#pricing">Pricing Plans</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tec">Technical</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#security">Security</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-8 col-xl-7">
+                    <article class="mt-70 mt-lg-0">
+                        <div class="faq--wrapper" id="company">
+                            <h3 class="main-title">Timeseries Statistics</h3>
+                            <div class="faq--area">
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">See how the number of esg reports changes in different period of time.</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>Total Reports: {{total}}</p>
+                                        <ul class="nulla-list">
+                                            {% for i in timedata %}
+                                            <li>{{i}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">Why can't I login to my account?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">What features does the Mobile App have?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="faq--wrapper" id="freelancer">
+                            <h3 class="main-title">Source Statistics</h3>
+                            <div class="faq--area">
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">See how the number of esg reports varies in different sources.</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>Total Reports: {{total}}</p>
+                                        <ul class="nulla-list">
+                                            {% for i in sourcedata %}
+                                            <li>{{i}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">What problem does Deskoto solve?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">How does Deskotos differ from usual apps?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">More about early access</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="faq--wrapper" id="account">
+                            <h3 class="main-title">Word Frequency</h3>
+                            <div class="faq--area">
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">See word frequency in key words.</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <div class="col-sm-10 col-md-6 col-lg-4">
+                                            <div class="team-item">
+                                                <div class="team-thumb">
+                                                    <a href="#0"><img src="{{STATIC_URL}}images/word/word_freq.png" alt="word"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">See word frequency in key phrases.</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <div class="col-sm-10 col-md-6 col-lg-4">
+                                            <div class="team-item">
+                                                <div class="team-thumb">
+                                                    <a href="#0"><img src="{{STATIC_URL}}images/word/phrase_freq.png" alt="word"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">See word frequency abstract.</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <div class="col-sm-10 col-md-6 col-lg-4">
+                                            <div class="team-item">
+                                                <div class="team-thumb">
+                                                    <a href="#0"><img src="{{STATIC_URL}}images/word/abstract_freq.png" alt="word"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="faq--wrapper" id="pricing">
+                            <h3 class="main-title">Pricing Plans</h3>
+                            <div class="faq--area">
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">How much does Deskoto cost?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">How I can get Deskoto for free?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">Can I cancel my account plan at any time?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq--wrapper" id="tec">
+                            <h3 class="main-title">Technical</h3>
+                            <div class="faq--area">
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">How can I edit my personal information?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">How do I disable installed apps?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">How do I disable installed apps?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="faq--wrapper" id="security">
+                            <h3 class="main-title">Security</h3>
+                            <div class="faq--area">
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">How do I switch to a different price plan?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">How can I get my money back?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                                <div class="faq--item">
+                                    <div class="faq-title">
+                                        <h6 class="title">What about the security of my payments?</h6>
+                                        <span class="icon"></span>
+                                    </div>
+                                    <div class="faq-content">
+                                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Faqs Section Ends Here =============-->
+
+
+    <!--============= Have Questions Section Starts Here =============-->
+    <div class="have-questions-section mb--70--145">
+        <div class="container">
+            <div class="have-question-wrapper">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="have-question-content">
+                            <h2 class="title">Still Have Questions?</h2>
+                            <p>Our team is here for you!</p>
+                            <a href="/contact/" class="custom-button">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="right-thumb d-none d-lg-block">
+                        <img src="{{STATIC_URL}}images/faq/have-questions.png" alt="faq">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============= Have Questions Section Ends Here =============-->
+
+    <!--============= Footer Section Starts Here =============-->
+    <footer class="footer-section pt-70-145">
+        <div class="dot-slider bg_img" data-background="{{STATIC_URL}}css/img/footer-dots.png"></div>
+        <div class="container">
+            <div class="footer-top cl-white padding-bottom padding-top">
+                <div class="row mb--50 justify-content-between">
+                    <div class="col-sm-8 col-lg-4">
+                        <div class="footer-widget widget-about">
+                            <div class="logo-area">
+                                <div class="support">
+                                    <a href="/#0/">ESG Center</a>
+                                </div>
+                            </div>
+                            <p>ESG Center is a search engine for ESG reports of listed companies. You can get summary infomation and acquire the original reports. Feel free to explore!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-4 col-lg-3 offset-lg-1">
+                        <div class="footer-widget widget-link">
+                            <h5 class="title">Menu</h5>
+                            <ul>
+                                <li>
+                                    <a href="/about/">About</a>
+                                </li>
+                                <li>
+                                    <a href="/stat/">Statistics</a>
+                                </li>
+                                <li>
+                                    <a href="/changelog/">Changelog</a>
+                                </li>
+                                <li>
+                                    <a href="/contact/">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-4 col-lg-3 offset-lg-1">
+                        <div class="footer-widget widget-link">
+                            <h5 class="title">User System</h5>
+                            <ul>
+                                <li>
+                                    <a href="/logout/">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom cl-white">
+                 Designed for <a href="#0">Citi Cup</a></p>
+            </div>
+        </div>
+    </footer>
+    <!--============= Footer Section Ends Here =============-->
+
+    <script src="{{STATIC_URL}}js/jquery-3.3.1.min.js"></script>
+    <script src="{{STATIC_URL}}js/modernizr-3.6.0.min.js"></script>
+    <script src="{{STATIC_URL}}js/plugins.js"></script>
+    <script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+    <script src="{{STATIC_URL}}js/wow.min.js"></script>
+    <script src="{{STATIC_URL}}js/waypoints.js"></script>
+    <script src="{{STATIC_URL}}js/nice-select.js"></script>
+    <script src="{{STATIC_URL}}js/owl.min.js"></script>
+    <script src="{{STATIC_URL}}js/magnific-popup.min.js"></script>
+    <script src="{{STATIC_URL}}js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ESGsite - All you NEED to KNOW about ESG</title>
+
+    <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/all.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/animate.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/nice-select.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/owl.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/magnific-popup.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/flaticon.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/main.css">
+
+    <link rel="shortcut icon" href="{{STATIC_URL}}images/favicon.png" type="image/x-icon">
+</head>
+
+<body data-spy="scroll" data-target="#faq-menu" data-offset="150">
+    <!--============= ScrollToTop Section Starts Here =============-->
+    <div class="overlayer" id="overlayer">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+    <a href="#0" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+    <div class="overlay"></div>
+    <!--============= ScrollToTop Section Ends Here =============-->
+
+
+    <!--============= Header Section Starts Here =============-->
+    <header class="header-section">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-area">
+                    <div class="support">
+                        <a href="/#0/">ESG Center</a>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    <li>
+                        <a href="#0">Service</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="/stat/">Statistics</a>
+                            </li>
+                            <li>
+                                <a href="/changelog/">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="/list/">Advanced Search</a>
+                            </li>
+                            <li>
+                                <a href="/contact/">Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="d-md-none text-center">
+                        <a href="#0" class="m-0 header-button">Submit a Request</a>
+                    </li>
+                </ul>
+                <div class="header-bar d-lg-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-right">
+                    <a href="/logout/" class="header-button d-none d-md-inline-block">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--============= Header Section Ends Here =============-->
+
+    <!--============= Banner Section Starts Here =============-->
+    <div class="hero-section bg_img" data-background="{{STATIC_URL}}images/banner/page-header.jpg">
+        <div class="container">
+            <div class="cate-header cl-white">
+                <h1 class="cate-title">Advanced Search</h1>
+            </div>
+        </div>
+    </div>
+    <!--============= Banner Section Ends Here =============-->
+
+    
+    <!--============= Form Section Starts Here =============-->
+    <div class="form-section"> 
+        <div class="container"> 
+            <div class="row justify-content-center"> 
+                <div class="col-md-10"> 
+                    <div class="search-wrapper mt--55--70"> 
+                        <form action="/list/" method="post" class="form-horizontal col-sm-offset-3 col-md-offset-3"> 
+                            {% csrf_token %} 
+                            <h3 class="form-title"><br></h3>
+                            <div > 
+                                <div class="form-group"> 
+                                    {% if content %}
+                                    <input type="text" name="content" placeholder="Start typing your search…" required value="{{content}}">
+                                    {% else %}
+                                    <input type="text" name="content" placeholder="Start typing your search…" required>
+                                    {% endif %}
+                                    <button type="submit"><i class="flaticon-search"></i> <span class="d-none d-sm-inline-block">Search</span></button>
+                                </div> 
+                                <div class="form-group" >
+                                    <p>Sort Order:</p> <!-- Use bootstrap radio buttons --> 
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons" > 
+                                        <!-- Add active and checked attributes to the default option --> 
+                                        <label class="btn btn-secondary active bg-info"> 
+                                        <!-- Use value attribute to specify the value of each option --> 
+                                            <input type="radio" name="sort" value="time" checked>Chronological 
+                                        </label> 
+                                        <p>&nbsp</p>
+                                        <label class="btn btn-secondary bg-info"> 
+                                            <input type="radio" name="sort" value="re-time">Reverse chronological
+                                        </label> 
+                                    </div> <!-- Add some margin for spacing --> 
+                                    <br><br> 
+                                </div> 
+                                <div class="form-group" > 
+                                    <p>Source Site:</p> 
+                                    <!-- Use bootstrap checkbox buttons --> 
+                                    <!-- Add inline attribute to display them horizontally --> 
+                                    <!-- Use value attribute to specify the value of each option --> 
+                                    <!-- Use id attribute to link the label and the input -->
+                                    <!-- Use for attribute to specify which input the label belongs to --> 
+                                    <!-- Wrap each checkbox in a div with form-check and form-check-inline classes -->
+                                    <div class="form-check form-check-inline"> 
+                                        <input class="form-check-input" type=checkbox name=tag value=0 id=cinfo> 
+                                        <label class="form-check-label" for=cpp>CNInfo</label> 
+                                    </div>
+                                    <div class="form-check form-check-inline"> 
+                                        <input class="form-check-input" type=checkbox name=tag value=1 id=shse> 
+                                        <label class="form-check-label" for=cpp>SHSE</label> 
+                                    </div>
+                                    <div class="form-check form-check-inline"> 
+                                        <input class="form-check-input" type=checkbox name=tag value=2 id=szse> 
+                                        <label class="form-check-label" for=cpp>SZSE</label> 
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============= Form Section Ends Here =============-->
+
+
+    <!--============= Category Section Starts Here =============-->
+    <section class="category-section padding-top padding-bottom">
+        <div class="container">
+            <div class="row mb-30-none justify-content-center">              
+                {% if page_obj %}
+                    {% for report in page_obj %}
+                        <div class="col-12">
+                            <div class="cate-single-item">
+                                <h4 class="title">{{report.title}}</h4>
+                                <h5>{{report.edittime | date:"Y-m-d" }}</h3><br>
+                                <h5>source:{{report.site}}</h3><br>
+                                <a href="/list/{{report.id}}"><I>Summary Report</I></a>
+                                <br><br>
+                                <a href={{report.pdf_url}}><I>Original File</I></a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p>No relevant reports info is available.</p>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" >
+        function getpage() 
+        {
+            var pageNum = $('#pageNum').val();
+            if(pageNum >= 1 && pageNum <= {{ paginator.num_pages }})
+            {
+                location.assign("/list/?page="+pageNum)
+            }
+            else
+            {
+                alert('Please Enter Valid Pagenum!')
+            }
+        }
+    </script>
+
+    {% if page_obj %}
+    <div class="container">
+        <div class="row mb-30-none justify-content-center">            
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+                {% if page.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={ page.previous_page_number }" aria-label="Previous">
+                        <span aria-hidden="true">Previous</span>
+                    </a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous" >
+                        <span aria-hidden="true">Previous</span>
+                    </a>
+                </li>
+                {% endif %}
+                {% for num in page_range %}
+                    {% if num == current_num %}
+                        <li class="page-item active"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                    {% else %}
+                        <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% if page.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{page.next_page_number}}" aria-label="Previous">
+                        <span aria-hidden="true">Next</span>
+                    </a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">Next</span>
+                    </a>
+                </li>
+                {% endif %}
+                <li class="page-item"><a class="page-link" href="?page={{paginator.num_pages}}">Last</a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    {% endif %}
+    <!--============= Category Section Ends Here =============-->
+
+
+    <!--============= Have Questions Section Starts Here =============-->
+    <div class="have-questions-section mb--70--145">
+        <div class="container">
+            <div class="have-question-wrapper">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="have-question-content">
+                            <h2 class="title">Still Have Questions?</h2>
+                            <p>Our team is here for you!</p>
+                            <a href="/contact/" class="custom-button">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="right-thumb d-none d-lg-block">
+                        <img src="{{STATIC_URL}}images/faq/have-questions.png" alt="faq">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============= Have Questions Section Ends Here =============-->
+
+    <!--============= Footer Section Starts Here =============-->
+    <footer class="footer-section pt-70-145">
+        <div class="dot-slider bg_img" data-background="{{STATIC_URL}}css/img/footer-dots.png"></div>
+        <div class="container">
+            <div class="footer-top cl-white padding-bottom padding-top">
+                <div class="row mb--50 justify-content-between">
+                    <div class="col-sm-8 col-lg-4">
+                        <div class="footer-widget widget-about">
+                            <div class="logo-area">
+                                <div class="support">
+                                    <a href="/#0/">ESG Center</a>
+                                </div>
+                            </div>
+                            <p>ESG Center is a search engine for ESG reports of listed companies. You can get summary infomation and acquire the original reports. Feel free to explore!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-4 col-lg-3 offset-lg-1">
+                        <div class="footer-widget widget-link">
+                            <h5 class="title">Menu</h5>
+                            <ul>
+                                <li>
+                                    <a href="/about/">About</a>
+                                </li>
+                                <li>
+                                    <a href="/stat/">Statistics</a>
+                                </li>
+                                <li>
+                                    <a href="/changelog/">Changelog</a>
+                                </li>
+                                <li>
+                                    <a href="/contact/">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-4 col-lg-3 offset-lg-1">
+                        <div class="footer-widget widget-link">
+                            <h5 class="title">User System</h5>
+                            <ul>
+                                <li>
+                                    <a href="/logout/">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom cl-white">
+                 Designed for <a href="#0">Citi Cup</a></p>
+            </div>
+        </div>
+    </footer>
+    <!--============= Footer Section Ends Here =============-->
+
+    <script src="{{STATIC_URL}}js/jquery-3.3.1.min.js"></script>
+    <script src="{{STATIC_URL}}js/modernizr-3.6.0.min.js"></script>
+    <script src="{{STATIC_URL}}js/plugins.js"></script>
+    <script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+    <script src="{{STATIC_URL}}js/wow.min.js"></script>
+    <script src="{{STATIC_URL}}js/waypoints.js"></script>
+    <script src="{{STATIC_URL}}js/nice-select.js"></script>
+    <script src="{{STATIC_URL}}js/owl.min.js"></script>
+    <script src="{{STATIC_URL}}js/magnific-popup.min.js"></script>
+    <script src="{{STATIC_URL}}js/main.js"></script>
+</body>
+
+</html>

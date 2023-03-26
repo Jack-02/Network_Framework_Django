@@ -1,0 +1,615 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Sat Mar 25 17:50:40 2023] ***
+compiled with version: 11.2.0 on 25 March 2023 09:10:42
+os: Linux-5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022
+nodename: VM-24-15-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/ubuntu/network_framework_django/ESG_site
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ubuntu/network_framework_django/ESG_site
+your processes number limit is 7458
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.6 (main, Nov  2 2022, 18:53:38) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x556b1d5dbea0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801944 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556b1d5dbea0 pid: 1861297 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1861297)
+spawned uWSGI worker 1 (pid: 1861310, cores: 1)
+spawned uWSGI worker 2 (pid: 1861311, cores: 1)
+spawned uWSGI worker 3 (pid: 1861312, cores: 1)
+spawned uWSGI worker 4 (pid: 1861313, cores: 1)
+spawned uWSGI worker 5 (pid: 1861314, cores: 1)
+spawned uWSGI worker 6 (pid: 1861315, cores: 1)
+spawned uWSGI worker 7 (pid: 1861316, cores: 1)
+spawned uWSGI worker 8 (pid: 1861317, cores: 1)
+spawned uWSGI worker 9 (pid: 1861318, cores: 1)
+spawned uWSGI worker 10 (pid: 1861319, cores: 1)
+Not Found: /assets/css/bootstrap.min.css
+Not Found: /assets/css/owl.min.css
+Not Found: /assets/css/main.css
+Not Found: /assets/css/all.min.css
+Not Found: /assets/css/magnific-popup.css
+Not Found: /assets/js/plugins.js
+Not Found: /assets/css/flaticon.css
+Not Found: /assets/js/jquery-3.3.1.min.js
+Not Found: /assets/css/nice-select.css
+Not Found: /assets/css/animate.css
+Not Found: /assets/js/owl.min.js
+Not Found: /assets/js/waypoints.js
+Not Found: /assets/js/magnific-popup.min.js
+Not Found: /assets/images/faq/have-questions.png
+Not Found: /assets/js/modernizr-3.6.0.min.js
+Not Found: /assets/js/main.js
+Not Found: /assets/js/nice-select.js
+Not Found: /assets/js/wow.min.js
+Not Found: /assets/js/bootstrap.min.js
+Not Found: /assets/images/favicon.png
+Not Found: /assets/css/magnific-popup.css
+Not Found: /assets/css/all.min.css
+Not Found: /assets/css/owl.min.css
+Not Found: /assets/css/bootstrap.min.css
+Not Found: /assets/css/animate.css
+Not Found: /assets/css/nice-select.css
+Not Found: /assets/css/main.css
+Not Found: /assets/css/flaticon.css
+Sat Mar 25 09:54:05 2023 - uWSGI worker 9 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:05 2023 - uWSGI worker 10 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:05 2023 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:05 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:05 2023 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:05 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:05 2023 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:05 2023 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:05 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.21 (64bit) on [Sat Mar 25 17:54:39 2023] ***
+compiled with version: 11.2.0 on 25 March 2023 09:10:42
+os: Linux-5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022
+nodename: VM-24-15-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/ubuntu/network_framework_django/ESG_site
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ubuntu/network_framework_django/ESG_site
+your processes number limit is 7458
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.6 (main, Nov  2 2022, 18:53:38) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x555646818ea0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801944 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x555646818ea0 pid: 1862119 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1862119)
+spawned uWSGI worker 1 (pid: 1862133, cores: 1)
+spawned uWSGI worker 2 (pid: 1862134, cores: 1)
+spawned uWSGI worker 3 (pid: 1862135, cores: 1)
+spawned uWSGI worker 4 (pid: 1862136, cores: 1)
+spawned uWSGI worker 5 (pid: 1862137, cores: 1)
+spawned uWSGI worker 6 (pid: 1862138, cores: 1)
+spawned uWSGI worker 7 (pid: 1862139, cores: 1)
+spawned uWSGI worker 8 (pid: 1862140, cores: 1)
+spawned uWSGI worker 9 (pid: 1862141, cores: 1)
+spawned uWSGI worker 10 (pid: 1862142, cores: 1)
+Not Found: /assets/css/all.min.css
+Not Found: /assets/css/flaticon.css
+Not Found: /assets/css/magnific-popup.css
+Not Found: /assets/css/animate.css
+Not Found: /assets/css/owl.min.css
+Not Found: /assets/css/bootstrap.min.css
+Not Found: /assets/css/nice-select.css
+Not Found: /assets/css/main.css
+Not Found: /assets/js/wow.min.js
+Not Found: /assets/js/nice-select.js
+Not Found: /assets/js/plugins.js
+Not Found: /assets/js/modernizr-3.6.0.min.js
+Not Found: /assets/js/waypoints.js
+Not Found: /assets/images/faq/have-questions.png
+Not Found: /assets/js/bootstrap.min.js
+Not Found: /assets/js/magnific-popup.min.js
+Not Found: /assets/js/owl.min.js
+Not Found: /assets/js/main.js
+Not Found: /assets/js/jquery-3.3.1.min.js
+Sat Mar 25 09:54:52 2023 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:52 2023 - uWSGI worker 10 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:52 2023 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:52 2023 - uWSGI worker 9 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:52 2023 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:52 2023 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:52 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:52 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:54:52 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.21 (64bit) on [Sat Mar 25 17:56:23 2023] ***
+compiled with version: 11.2.0 on 25 March 2023 09:10:42
+os: Linux-5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022
+nodename: VM-24-15-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/ubuntu/network_framework_django/ESG_site
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ubuntu/network_framework_django/ESG_site
+your processes number limit is 7458
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.6 (main, Nov  2 2022, 18:53:38) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5603ccae9ea0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801944 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5603ccae9ea0 pid: 1862522 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1862522)
+spawned uWSGI worker 1 (pid: 1862535, cores: 1)
+spawned uWSGI worker 2 (pid: 1862536, cores: 1)
+spawned uWSGI worker 3 (pid: 1862537, cores: 1)
+spawned uWSGI worker 4 (pid: 1862538, cores: 1)
+spawned uWSGI worker 5 (pid: 1862539, cores: 1)
+spawned uWSGI worker 6 (pid: 1862540, cores: 1)
+spawned uWSGI worker 7 (pid: 1862541, cores: 1)
+spawned uWSGI worker 8 (pid: 1862542, cores: 1)
+spawned uWSGI worker 9 (pid: 1862543, cores: 1)
+spawned uWSGI worker 10 (pid: 1862544, cores: 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Sat Mar 25 17:59:13 2023] ***
+compiled with version: 11.2.0 on 25 March 2023 09:10:42
+os: Linux-5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022
+nodename: VM-24-15-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/ubuntu/network_framework_django/ESG_site
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ubuntu/network_framework_django/ESG_site
+your processes number limit is 7458
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.6 (main, Nov  2 2022, 18:53:38) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558ca6fdaeb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801944 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x558ca6fdaeb0 pid: 1863320 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1863320)
+spawned uWSGI worker 1 (pid: 1863332, cores: 1)
+spawned uWSGI worker 2 (pid: 1863333, cores: 1)
+spawned uWSGI worker 3 (pid: 1863334, cores: 1)
+spawned uWSGI worker 4 (pid: 1863335, cores: 1)
+spawned uWSGI worker 5 (pid: 1863336, cores: 1)
+spawned uWSGI worker 6 (pid: 1863337, cores: 1)
+spawned uWSGI worker 7 (pid: 1863338, cores: 1)
+spawned uWSGI worker 8 (pid: 1863339, cores: 1)
+spawned uWSGI worker 9 (pid: 1863340, cores: 1)
+spawned uWSGI worker 10 (pid: 1863341, cores: 1)
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.10/dist-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/network_framework_django/ESG_site/./ESG_site/urls.py", line 25, in <module>
+    ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+NameError: name 'settings' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.10/dist-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/dist-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/dist-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/network_framework_django/ESG_site/./ESG_site/urls.py", line 25, in <module>
+    ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+NameError: name 'settings' is not defined
+Sat Mar 25 09:59:40 2023 - uWSGI worker 10 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:59:40 2023 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:59:40 2023 - uWSGI worker 9 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:59:40 2023 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 09:59:40 2023 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.21 (64bit) on [Sat Mar 25 18:00:13 2023] ***
+compiled with version: 11.2.0 on 25 March 2023 09:10:42
+os: Linux-5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022
+nodename: VM-24-15-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/ubuntu/network_framework_django/ESG_site
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ubuntu/network_framework_django/ESG_site
+your processes number limit is 7458
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.6 (main, Nov  2 2022, 18:53:38) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x565486581eb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801944 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x565486581eb0 pid: 1863602 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1863602)
+spawned uWSGI worker 1 (pid: 1863616, cores: 1)
+spawned uWSGI worker 2 (pid: 1863617, cores: 1)
+spawned uWSGI worker 3 (pid: 1863618, cores: 1)
+spawned uWSGI worker 4 (pid: 1863619, cores: 1)
+spawned uWSGI worker 5 (pid: 1863620, cores: 1)
+spawned uWSGI worker 6 (pid: 1863621, cores: 1)
+spawned uWSGI worker 7 (pid: 1863622, cores: 1)
+spawned uWSGI worker 8 (pid: 1863623, cores: 1)
+spawned uWSGI worker 9 (pid: 1863624, cores: 1)
+spawned uWSGI worker 10 (pid: 1863625, cores: 1)
+Not Found: /assets/css/bootstrap.min.css.map
+Not Found: /assets/js/bootstrap.min.js.map
+Not Found: /config/getuser
+Sat Mar 25 10:20:31 2023 - uWSGI worker 10 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 10:20:31 2023 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 10:20:31 2023 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 10:20:31 2023 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 10:20:31 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 10:20:31 2023 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 10:20:31 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 10:20:31 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 10:20:31 2023 - uWSGI worker 9 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.21 (64bit) on [Sat Mar 25 18:20:34 2023] ***
+compiled with version: 11.2.0 on 25 March 2023 09:10:42
+os: Linux-5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022
+nodename: VM-24-15-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/ubuntu/network_framework_django/ESG_site
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ubuntu/network_framework_django/ESG_site
+your processes number limit is 7458
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.6 (main, Nov  2 2022, 18:53:38) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561f5486ed10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801944 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561f5486ed10 pid: 1867414 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1867414)
+spawned uWSGI worker 1 (pid: 1867427, cores: 1)
+spawned uWSGI worker 2 (pid: 1867428, cores: 1)
+spawned uWSGI worker 3 (pid: 1867429, cores: 1)
+spawned uWSGI worker 4 (pid: 1867430, cores: 1)
+spawned uWSGI worker 5 (pid: 1867431, cores: 1)
+spawned uWSGI worker 6 (pid: 1867432, cores: 1)
+spawned uWSGI worker 7 (pid: 1867433, cores: 1)
+spawned uWSGI worker 8 (pid: 1867434, cores: 1)
+spawned uWSGI worker 9 (pid: 1867435, cores: 1)
+spawned uWSGI worker 10 (pid: 1867436, cores: 1)
+Internal Server Error: /list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/network_framework_django/ESG_site/./ESG/views.py", line 63, in esg_list
+    paginator = Paginator(search_report_list, 20)
+NameError: name 'search_report_list' is not defined
+Not Found: /favicon.ico
+Internal Server Error: /list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/network_framework_django/ESG_site/./ESG/views.py", line 63, in esg_list
+    paginator = Paginator(search_report_list, 20)
+NameError: name 'search_report_list' is not defined
+Not Found: /systembc/password.php
+Not Found: /Public/home/js/check.js
+Not Found: /home
+Internal Server Error: /list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/network_framework_django/ESG_site/./ESG/views.py", line 63, in esg_list
+    paginator = Paginator(search_report_list, 20)
+NameError: name 'search_report_list' is not defined
+Not Found: /favicon.ico
+Internal Server Error: /list/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/dist-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/network_framework_django/ESG_site/./ESG/views.py", line 63, in esg_list
+    paginator = Paginator(search_report_list, 20)
+NameError: name 'search_report_list' is not defined
+Not Found: /home
+Not Found: /favicon.ico
+Not Found: /HNAP1/
+Not Found: /HNAP1/
+Not Found: /HNAP1/
+Not Found: /boaform/admin/formLogin
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /actuator/health
+Not Found: /HNAP1/
+Not Found: /solr/
+Not Found: /webfig/
+Not Found: /webfig/
+Not Found: /solr/
+Not Found: /robots.txt
+Not Found: /HNAP1/
+Not Found: /.env
+Sat Mar 25 17:54:43 2023 - uWSGI worker 9 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:54:43 2023 - uWSGI worker 10 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:54:43 2023 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:54:43 2023 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:54:43 2023 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:54:43 2023 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:54:43 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:54:43 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:54:43 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.21 (64bit) on [Sun Mar 26 01:54:45 2023] ***
+compiled with version: 11.2.0 on 25 March 2023 09:10:42
+os: Linux-5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022
+nodename: VM-24-15-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/ubuntu/network_framework_django/ESG_site
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ubuntu/network_framework_django/ESG_site
+your processes number limit is 7458
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.6 (main, Nov  2 2022, 18:53:38) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55e681554d10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801944 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55e681554d10 pid: 1934422 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1934422)
+spawned uWSGI worker 1 (pid: 1934435, cores: 1)
+spawned uWSGI worker 2 (pid: 1934436, cores: 1)
+spawned uWSGI worker 3 (pid: 1934437, cores: 1)
+spawned uWSGI worker 4 (pid: 1934438, cores: 1)
+spawned uWSGI worker 5 (pid: 1934439, cores: 1)
+spawned uWSGI worker 6 (pid: 1934440, cores: 1)
+spawned uWSGI worker 7 (pid: 1934441, cores: 1)
+spawned uWSGI worker 8 (pid: 1934442, cores: 1)
+spawned uWSGI worker 9 (pid: 1934443, cores: 1)
+spawned uWSGI worker 10 (pid: 1934444, cores: 1)
+Not Found: /favicon.ico
+Not Found: /assets/images/word/word_freq.png
+Not Found: /assets/images/word/phrase_freq.png
+Not Found: /assets/images/word/abstract_freq.png
+Sat Mar 25 17:55:44 2023 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:55:44 2023 - uWSGI worker 10 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:55:44 2023 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:55:44 2023 - uWSGI worker 9 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:55:44 2023 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:55:44 2023 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:55:44 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:55:44 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Mar 25 17:55:44 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.21 (64bit) on [Sun Mar 26 01:56:16 2023] ***
+compiled with version: 11.2.0 on 25 March 2023 09:10:42
+os: Linux-5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022
+nodename: VM-24-15-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/ubuntu/network_framework_django/ESG_site
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ubuntu/network_framework_django/ESG_site
+your processes number limit is 7458
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.10.6 (main, Nov  2 2022, 18:53:38) [GCC 11.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55abd292bd10
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801944 bytes (783 KB) for 10 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55abd292bd10 pid: 1934882 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1934882)
+spawned uWSGI worker 1 (pid: 1934896, cores: 1)
+spawned uWSGI worker 2 (pid: 1934897, cores: 1)
+spawned uWSGI worker 3 (pid: 1934898, cores: 1)
+spawned uWSGI worker 4 (pid: 1934899, cores: 1)
+spawned uWSGI worker 5 (pid: 1934900, cores: 1)
+spawned uWSGI worker 6 (pid: 1934901, cores: 1)
+spawned uWSGI worker 7 (pid: 1934902, cores: 1)
+spawned uWSGI worker 8 (pid: 1934903, cores: 1)
+spawned uWSGI worker 9 (pid: 1934904, cores: 1)
+spawned uWSGI worker 10 (pid: 1934905, cores: 1)
+Not Found: /favicon.ico
+Not Found: /boaform/admin/formLogin
+Not Found: /favicon.ico
+Not Found: /ip
+Not Found: /aaa9
+Not Found: /aab8
+Not Found: /json/
+Not Found: /boaform/admin/formLogin
+Not Found: /boaform/admin/formLogin
+Not Found: /config/getuser
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /solr/admin/info/system
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /solr/admin/info/system
+Not Found: /console/
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /Autodiscover/Autodiscover.xml
+Not Found: /console/
+Not Found: /console/
+Not Found: /_ignition/execute-solution
+Not Found: /_ignition/execute-solution
+Not Found: /echo.php
+Not Found: /_ignition/execute-solution
+Not Found: /actuator/gateway/routes
+Not Found: /geoserver
+Not Found: /geoserver
+Not Found: /geoserver
+Not Found: /robots.txt
+Not Found: /HNAP1/
+Not Found: /favicon.ico
+Not Found: /geoserver/web/
+Not Found: /geoserver/web/

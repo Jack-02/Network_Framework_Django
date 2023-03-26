@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ESGsite - All you NEED to KNOW about ESG</title>
+
+    <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/all.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/animate.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/nice-select.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/owl.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/magnific-popup.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/flaticon.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/main.css">
+
+    <link rel="shortcut icon" href="{{STATIC_URL}}images/favicon.png" type="image/x-icon">
+</head>
+
+<body data-spy="scroll" data-target="#faq-menu" data-offset="150">
+    <!--============= ScrollToTop Section Starts Here =============-->
+    <div class="overlayer" id="overlayer">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+    <a href="#0" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+    <div class="overlay"></div>
+    <!--============= ScrollToTop Section Ends Here =============-->
+
+
+    <!--============= Header Section Starts Here =============-->
+    <header class="header-section">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-area">
+                    <div class="support">
+                        <a href="/#0/">ESG Center</a>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    <li>
+                        <a href="#0">Service</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="/stat/">Statistics</a>
+                            </li>
+                            <li>
+                                <a href="/changelog/">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="/list/">Advanced Search</a>
+                            </li>
+                            <li>
+                                <a href="/contact/">Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="d-md-none text-center">
+                        <a href="#0" class="m-0 header-button">Submit a Request</a>
+                    </li>
+                </ul>
+                <div class="header-bar d-lg-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-right">
+                    <a href="/logout/" class="header-button d-none d-md-inline-block">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--============= Header Section Ends Here =============-->
+
+    <!--============= Banner Section Starts Here =============-->
+    <div class="hero-section bg_img style-two" data-background="{{STATIC_URL}}images/banner/page-header.jpg">
+        <div class="container">
+            <div class="cate-header cl-white">
+                <h1 class="cate-title">{{report.title}}</h1>
+                <div class="cate-meta">
+                    <div class="left">
+                        <span><I>{{report.edittime  | date:"Y-m-d" }}</I></span>
+                        <span><I><a href="{{report.pdf_url}}">Original File</a></I></span>
+                        <!-- <h6 class="subtitle"><a href="#0">Ross Fox</a></h6> -->
+                    </div>
+                    <!-- <div class="right">
+                        <i class="flaticon-view-files"></i><span>503K</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============= Banner Section Ends Here =============-->
+
+
+    <!--============= Category Section Starts Here =============-->
+    <section class="category-section padding-bottom mt--160 pos-rel">
+        <div class="container">
+            <div class="category-single-wrapper">
+                <div class="single-item">
+                    <h2 class="title">Key Words</h2>
+                    <p>{{report.key_words}}</p>
+                </div>
+                <div class="single-item">
+                    <h2 class="title">Key Phrases</h2>
+                    <p>{{report.key_phrases}}</p>
+                </div>
+                <div class="single-item">
+                    <h2 class="title">Abstract</h2>
+                    <p>{{report.abstract | linebreaksbr}}</p>
+                    <!-- <ul class="nulla-list">
+                        <li>Lorem ipsum dolor</li>
+                        <li>Sit aspernatur aut</li>
+                        <li>Nibh purus pretium</li>
+                        <li>Imperdiet ullamcorper</li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Category Section Ends Here =============-->
+
+
+    <!--============= Have Questions Section Starts Here =============-->
+    <div class="have-questions-section mb--70--145">
+        <div class="container">
+            <div class="have-question-wrapper">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="have-question-content">
+                            <h2 class="title">Still Have Questions?</h2>
+                            <p>Our team is here for you!</p>
+                            <a href="/contact/" class="custom-button">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="right-thumb d-none d-lg-block">
+                        <img src="{{STATIC_URL}}images/faq/have-questions.png" alt="faq">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============= Have Questions Section Ends Here =============-->
+
+    <!--============= Footer Section Starts Here =============-->
+    <footer class="footer-section pt-70-145">
+        <div class="dot-slider bg_img" data-background="{{STATIC_URL}}css/img/footer-dots.png"></div>
+        <div class="container">
+            <div class="footer-top cl-white padding-bottom padding-top">
+                <div class="row mb--50 justify-content-between">
+                    <div class="col-sm-8 col-lg-4">
+                        <div class="footer-widget widget-about">
+                            <div class="logo-area">
+                                <div class="support">
+                                    <a href="/#0/">ESG Center</a>
+                                </div>
+                            </div>
+                            <p>ESG Center is a search engine for ESG reports of listed companies. You can get summary infomation and acquire the original reports. Feel free to explore!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-4 col-lg-3 offset-lg-1">
+                        <div class="footer-widget widget-link">
+                            <h5 class="title">Menu</h5>
+                            <ul>
+                                <li>
+                                    <a href="/about/">About</a>
+                                </li>
+                                <li>
+                                    <a href="/stat/">Statistics</a>
+                                </li>
+                                <li>
+                                    <a href="/changelog/">Changelog</a>
+                                </li>
+                                <li>
+                                    <a href="/contact/">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-4 col-lg-3 offset-lg-1">
+                        <div class="footer-widget widget-link">
+                            <h5 class="title">User System</h5>
+                            <ul>
+                                <li>
+                                    <a href="/logout/">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom cl-white">
+                 Designed for <a href="#0">Citi Cup</a></p>
+            </div>
+        </div>
+    </footer>
+    <!--============= Footer Section Ends Here =============-->
+
+    <script src="{{STATIC_URL}}js/jquery-3.3.1.min.js"></script>
+    <script src="{{STATIC_URL}}js/modernizr-3.6.0.min.js"></script>
+    <script src="{{STATIC_URL}}js/plugins.js"></script>
+    <script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+    <script src="{{STATIC_URL}}js/wow.min.js"></script>
+    <script src="{{STATIC_URL}}js/waypoints.js"></script>
+    <script src="{{STATIC_URL}}js/nice-select.js"></script>
+    <script src="{{STATIC_URL}}js/owl.min.js"></script>
+    <script src="{{STATIC_URL}}js/magnific-popup.min.js"></script>
+    <script src="{{STATIC_URL}}js/main.js"></script>
+</body>
+
+</html>

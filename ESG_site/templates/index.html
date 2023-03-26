@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ESGsite - All you NEED to KNOW about ESG</title>
+
+    <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/all.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/animate.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/nice-select.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/owl.min.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/magnific-popup.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/flaticon.css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/main.css">
+
+    <link rel="shortcut icon" href="{{STATIC_URL}}images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--============= ScrollToTop Section Starts Here =============-->
+    <div class="overlayer" id="overlayer">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+    <a href="#0" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+    <div class="overlay"></div>
+    <!--============= ScrollToTop Section Ends Here =============-->
+
+
+    <!--============= Header Section Starts Here =============-->
+    <header class="header-section">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-area">
+                    <div class="support">
+                        <a href="/#0/">ESG Center</a>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    <li>
+                        <a href="#0">Service</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="/stat/">Statistics</a>
+                            </li>
+                            <li>
+                                <a href="/changelog/">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="/list/">Advanced Search</a>
+                            </li>
+                            <li>
+                                <a href="/contact/">Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="d-md-none text-center">
+                        <a href="#0" class="m-0 header-button">Submit a Request</a>
+                    </li>
+                </ul>
+                <div class="header-bar d-lg-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-right">
+                    <a href="/logout/" class="header-button d-none d-md-inline-block">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--============= Header Section Ends Here =============-->
+
+    <!--============= Banner Section Starts Here =============-->
+    <section class="banner-1 bg_img" data-background="{{STATIC_URL}}images/banner/banner-1.jpg">
+        <div class="container">
+            <div class="banner-content cl-white">
+                <h1 class="title">ESG, Greener Life and Better Future</h1>
+                <p>Need info about ESG? Search through our ESG Center.</p>
+            </div>
+        </div>
+    </section>
+    <!--============= Banner Section Ends Here =============-->
+
+    
+    <!--============= How Search Section Starts Here =============-->
+    <div class="how-search-section padding-bottom mt--83">
+        <div class="container">
+            <form action="/list/" method="post" class="search-form">
+                {% csrf_token %}
+                <input type="text" name="content" placeholder="Start typing your search…" required>
+                <button type="submit"><i class="flaticon-search"></i> <span class="d-none d-sm-inline-block">Search</span></button>
+            </form>
+            <div class="how-search-wrapper">
+                <div class="row mb-30-none justify-content-center">
+                    <div class="col-sm-10 col-md-6 col-lg-4">
+                        <div class="how-search-item">
+                            <div class="thumb">
+                                <img src="{{STATIC_URL}}images/how/how1.png" alt="how">
+                            </div>
+                            <div class="content">
+                                <h4 class="title"><a href="/about/">How to use ESGsite</a></h4>
+                                <p>Helpful information on how to use ESGsite.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 col-md-6 col-lg-4">
+                        <div class="how-search-item">
+                            <div class="thumb">
+                                <img src="{{STATIC_URL}}images/how/how2.png" alt="how">
+                            </div>
+                            <div class="content">
+                                <h4 class="title"><a href="/stat/">ESG Insight</a></h4>
+                                <p>Have a look at the infomation of out data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 col-md-6 col-lg-4">
+                        <div class="how-search-item">
+                            <div class="thumb">
+                                <img src="{{STATIC_URL}}images/how/how3.png" alt="how">
+                            </div>
+                            <div class="content">
+                                <h4 class="title"><a href="/login/">User System</a></h4>
+                                <p>Log in to use our service to a greater extent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============= How Search Section Ends Here =============-->
+
+    <!--============= Have Questions Section Starts Here =============-->
+    <div class="have-questions-section mb--70--145">
+        <div class="container">
+            <div class="have-question-wrapper">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="have-question-content">
+                            <h2 class="title">Still Have Questions?</h2>
+                            <p>Our team is here for you!</p>
+                            <a href="/contact/" class="custom-button">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="right-thumb d-none d-lg-block">
+                        <img src="{{STATIC_URL}}images/faq/have-questions.png" alt="faq">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============= Have Questions Section Ends Here =============-->
+
+    <!--============= Footer Section Starts Here =============-->
+    <footer class="footer-section pt-70-145">
+        <div class="dot-slider bg_img" data-background="{{STATIC_URL}}css/img/footer-dots.png"></div>
+        <div class="container">
+            <div class="footer-top cl-white padding-bottom padding-top">
+                <div class="row mb--50 justify-content-between">
+                    <div class="col-sm-8 col-lg-4">
+                        <div class="footer-widget widget-about">
+                            <div class="logo-area">
+                                <div class="support">
+                                    <a href="/#0/">ESG Center</a>
+                                </div>
+                            </div>
+                            <p>ESG Center is a search engine for ESG reports of listed companies. You can get summary infomation and acquire the original reports. Feel free to explore!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-4 col-lg-3 offset-lg-1">
+                        <div class="footer-widget widget-link">
+                            <h5 class="title">Menu</h5>
+                            <ul>
+                                <li>
+                                    <a href="/about/">About</a>
+                                </li>
+                                <li>
+                                    <a href="/stat/">Statistics</a>
+                                </li>
+                                <li>
+                                    <a href="/changelog/">Changelog</a>
+                                </li>
+                                <li>
+                                    <a href="/contact/">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-4 col-lg-3 offset-lg-1">
+                        <div class="footer-widget widget-link">
+                            <h5 class="title">User System</h5>
+                            <ul>
+                                <li>
+                                    <a href="/logout/">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom cl-white">
+                 Designed for <a href="#0">Citi Cup</a></p>
+            </div>
+        </div>
+    </footer>
+    <!--============= Footer Section Ends Here =============-->
+
+    <script src="{{STATIC_URL}}js/jquery-3.3.1.min.js"></script>
+    <script src="{{STATIC_URL}}js/modernizr-3.6.0.min.js"></script>
+    <script src="{{STATIC_URL}}js/plugins.js"></script>
+    <script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+    <script src="{{STATIC_URL}}js/wow.min.js"></script>
+    <script src="{{STATIC_URL}}js/waypoints.js"></script>
+    <script src="{{STATIC_URL}}js/nice-select.js"></script>
+    <script src="{{STATIC_URL}}js/owl.min.js"></script>
+    <script src="{{STATIC_URL}}js/magnific-popup.min.js"></script>
+    <script src="{{STATIC_URL}}js/main.js"></script>
+</body>
+
+</html>
